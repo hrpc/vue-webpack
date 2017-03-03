@@ -1,0 +1,9 @@
+/target/
+/.settings/
+/.classpath
+/.project
+/.svn/
+/.git/
+/.externalToolBuilders/
+gulpfile.js
+node_modules
