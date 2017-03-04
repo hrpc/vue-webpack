@@ -20,7 +20,7 @@
 	}
 </script>
 
-<style>
+<style scoped>
 	*{
 		box-sizing: border-box;
 	}
@@ -44,7 +44,7 @@
 	
 	li {
 	  display: inline-block;
-	  margin: 0 10px;
+	  margin: 0 rem(10px);
 	}
 	
 	a {
@@ -54,7 +54,9 @@
 		display: flex;
 	}
 	.navbar-2{
-		height: 100px;
+		height: rem(100px);
+		font-size: dpr(18px);
 		width: 10px;
+		display: flex;
 	}
 </style>

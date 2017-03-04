@@ -14,16 +14,23 @@
     "vuex": "^2.2.1"
   },
   "devDependencies": {
+    "autoprefixer": "^6.7.6",
     "babel-core": "^6.0.0",
     "babel-loader": "^6.0.0",
     "babel-preset-latest": "^6.0.0",
     "cross-env": "^3.0.0",
     "css-loader": "^0.25.0",
     "file-loader": "^0.9.0",
+    "postcss": "^5.2.15",
+    "postcss-flexible": "^0.3.0",
+    "postcss-loader": "^1.3.3",
+    "postcss-px2rem": "^0.3.0",
+    "postcss-pxtorem": "^4.0.0",
+    "precss": "^1.4.0",
     "vue-loader": "^11.0.0",
     "vue-router": "^2.3.0",
     "vue-template-compiler": "^2.2.1",
-    "webpack": "^2.2.0",
+    "webpack": "^2.2.1",
     "webpack-dev-server": "^2.2.0"
   }
 }

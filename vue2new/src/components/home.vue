@@ -10,7 +10,8 @@
 <style>
 	.home{
 		flex: 1;
-		height: 400px;
+		height: rem(400px);
+		font-size: dpr(48px);
 		border: 1px solid black;
 	}
 </style>
