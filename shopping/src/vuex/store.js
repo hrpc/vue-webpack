@@ -24,7 +24,8 @@ export default new Vuex.Store({
 				'64GB': 6088,
 				'128GB': 6888
 			}
-		}
+		},
+		car:[]
 	},
 	actions: {
 		changeStyle:function({ commit }, styleUrl){
@@ -32,6 +33,9 @@ export default new Vuex.Store({
 		},
 		changePrice:function({ commit }, price){
 			commit('CHANGE_PRICE',price)
+		},
+		addItem:function({ commit },itemInfo){
+			commit('ADD_ITEM',itemInfo)
 		}
 	},
 	mutations: {
@@ -40,6 +44,13 @@ export default new Vuex.Store({
 		},
 		[types.CHANGE_PRICE] (state,price){
 			state.iPhone6S.price = price
+		},
+		[types.ADD_ITEM] (state){
+			const itemInfo = {
+				price:state.iPhone6S.price
+			}
+			state.car.push(itemInfo)
+			console.log(state.car)
 		}
 	},
 	getters

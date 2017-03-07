@@ -1,10 +1,17 @@
 <template>
 	<div class="nav-wrapper">
-		<h2>nav</h2>
+		<router-link to="/" class="nav">iphone6s</router-link>
+		<router-link to="/car" class="nav">car<span>{{car.length}}</span></router-link>
 	</div>
 </template>
 
 <script>
+	import { mapGetters } from 'vuex'
+	export default {
+		computed:mapGetters([
+			'car'
+		]),
+	}
 </script>
 
 <style scoped>
@@ -12,5 +19,15 @@
 		width: 100%;
 		height: 100px;
 		border: 1px solid red;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.nav-wrapper .nav{
+		width: 100px;
+		display: flex;
+		height: 100%;
+		align-items: center;
+		justify-content: center;
 	}
 </style>
