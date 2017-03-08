@@ -1,4 +1,5 @@
 export default {
 	iPhone6S:state => state.iPhone6S,
-	car:state => state.car
+	car:state => state.car,
+	users:state => state.users
 }

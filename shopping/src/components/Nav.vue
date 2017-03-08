@@ -1,6 +1,7 @@
 <template>
 	<div class="nav-wrapper">
 		<router-link to="/" class="nav">iphone6s</router-link>
+		<router-link to="/reg" class="nav">reg</router-link>
 		<router-link to="/car" class="nav">car<span>{{car.length}}</span></router-link>
 	</div>
 </template>
